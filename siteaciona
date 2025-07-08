@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aciona Commerce - A Máquina de Vendas para o Atacado de Moda</title>
+  <link href="https://drive.google.com/file/d/1rB29k_aVE6yT6eVKGh2xom6cm27Z19Fh/view?usp=drive_link" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Inter', sans-serif; background-color: #0f0f0f; color: #ffffff; }
+
+    header, section, footer { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
+
+    header { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.8rem; font-weight: 800; color: #59ffb1; }
+
+    nav a { margin: 0 1rem; color: #ffffff; text-decoration: none; font-weight: 500; }
+
+    .hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem; padding-top: 6rem; }
+    .hero-text { flex: 1; }
+    .hero h1 { font-size: 3.2rem; margin-bottom: 1rem; line-height: 1.2; }
+    .hero p { font-size: 1.2rem; line-height: 1.6; }
+    .cta-btn { background-color: #59ffb1; color: #000; padding: 1rem 2rem; font-size: 1rem; font-weight: bold; border: none; border-radius: 30px; cursor: pointer; margin-top: 2rem; }
+
+    .hero-image { flex: 1; }
+    .hero-image img { width: 100%; border-radius: 20px; box-shadow: 0 0 20px rgba(89, 255, 177, 0.3); }
+
+    .section-title { font-size: 2.4rem; margin-bottom: 2rem; color: #59ffb1; }
+
+    .features { display: flex; flex-wrap: wrap; gap: 2rem; }
+    .feature-card { background-color: #1c1c1c; padding: 2rem; border-radius: 20px; flex: 1 1 45%; box-shadow: 0 0 15px rgba(0,0,0,0.4); }
+    .feature-card h3 { color: #59ffb1; margin-bottom: 1rem; }
+    .feature-card p { font-size: 1rem; line-height: 1.6; }
+
+    .testimonials { background-color: #141414; padding: 4rem 2rem; border-radius: 20px; }
+    .testimonial { margin-bottom: 2rem; border-left: 4px solid #59ffb1; padding-left: 1.5rem; font-style: italic; }
+
+    .form-section { background-color: #1f1f1f; padding: 3rem 2rem; border-radius: 20px; margin-top: 4rem; text-align: center; }
+    .form-section input, .form-section textarea { width: 100%; padding: 1rem; margin-top: 1rem; border-radius: 10px; border: none; font-size: 1rem; }
+    .form-section button { margin-top: 2rem; background-color: #59ffb1; color: #000; font-weight: bold; padding: 1rem 2rem; border-radius: 30px; border: none; cursor: pointer; }
+
+    footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #aaa; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logotipo">
+  <img src="logotipo.png" alt="Logo Aciona Commerce" style="height: 30px;" />
+</div>
+
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Seu concorrente ainda tá no WhatsApp.<br>Você vai esperar ele te ultrapassar no e-commerce?</h1>
+      <p>Transformamos marcas de moda no atacado em potências digitais com e-commerces que vendem todos os dias, de forma integrada e estratégica.</p>
+      <button class="cta-btn">Quero faturar com meu e-commerce</button>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1613219441061-9a7b6ccfc403?auto=format&fit=crop&w=800&q=80" alt="Loja de moda online">
+    </div>
+  </section>
+
+  <section id="servicos">
+    <h2 class="section-title">O que fazemos por sua marca</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>E-commerce com SEO e Performance</h3>
+        <p>Lojas rápidas, otimizadas e que aparecem no Google. Criadas para transformar visita em venda.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Integração Total</h3>
+        <p>ERP, marketplaces, meios de pagamento e frete conectados. Sua operação mais leve e eficiente.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Crescimento Contínuo</h3>
+        <p>Análises, ajustes e melhorias semanais. Sua loja nunca para. Nem sua evolução.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Atendimento Ágil</h3>
+        <p>Resolvemos rápido, ajustamos com flexibilidade. Aqui, suporte não é enrolação. É ação.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="clientes">
+    <h2 class="section-title">Clientes que já estão vendendo mais</h2>
+    <div class="testimonial">“Depois que lançamos o e-commerce com a Aciona, nossas vendas online superaram a da feira. É outro jogo agora.” – <strong>Marca XYZ</strong></div>
+    <div class="testimonial">“A velocidade do suporte e a visão estratégica que eles trazem são diferentes de tudo que já contratei.” – <strong>Marca ABC</strong></div>
+  </section>
+
+  <section class="form-section" id="contato">
+    <h2 class="section-title">Vamos tirar sua marca do papel e colocar pra vender?</h2>
+    <p>Preencha o formulário abaixo e receba uma proposta em até 24h.</p>
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Conte brevemente sobre sua marca ou projeto"></textarea>
+      <button type="submit">Quero conversar com a Aciona</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Aciona Commerce. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
